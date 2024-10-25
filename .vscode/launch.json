@@ -1,0 +1,32 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch - Windows",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "build-windows",
+			"program": "${workspaceFolder}/bin/Debug/net8.0-windows10.0.19041.0/win10-x64/___PROJECTNAME___.exe",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"stopAtEntry": false,
+			"justMyCode": false
+		},
+		{
+			"name": "Run and Attach - Android",
+			"type": "mono",
+			"preLaunchTask": "run-android",
+			"request": "attach",
+			"address": "localhost",
+			"port": 10000
+		},
+		{
+			"name": "Attach - Android",
+			"type": "mono",
+			"request": "attach",
+			"address": "localhost",
+			"port": 10000
+		}
+	]
+}
